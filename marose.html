@@ -1,0 +1,65 @@
+<!-- fichier: surprise_rose.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Pour ma Rose 🌹</title>
+  <style>
+    body {
+      background-color: #ffe6f0;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #d6336c;
+      font-size: 2.5em;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background-color: #d6336c;
+      color: white;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+    #message {
+      display: none;
+      margin-top: 30px;
+      font-size: 1.3em;
+      color: #333;
+      animation: fadeIn 2s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Joyeux anniversaire ma Rose 🌹</h1>
+  <p>Une surprise t’attend... Clique ci-dessous !</p>
+  <button onclick="showMessage()">🌸 Ouvrir 🌸</button>
+
+  <div id="message">
+    <p>En ce jour magique, le monde a accueilli une perle rare : Toi ✨</p>
+    <p>Ma Rose 💖,
+
+        Je voulais te rappeler à quel point tu es importante pour moi.
+        Même si la distance nous sépare, mon cœur est tout près du tien.
+        
+        Joyeux anniversaire ! 🎂
+        
+        Avec tout mon amour 💖,
+        </p>
+    <p>Ton Joel pour toujours 💌</p>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").style.display = "block";
+    }
+  </script>
+</body>
+</html>
